@@ -1,0 +1,12 @@
+record(longout, "echo")
+{
+	field(DTYP, "asynInt32")
+	field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))DUMMY_ECHO")
+}
+
+record(longin, "echo_rbv")
+{
+	field(DTYP, "asynInt32")
+	field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))DUMMY_ECHO")
+	field(SCAN, "I/O Intr")
+}

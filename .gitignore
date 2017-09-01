@@ -1,0 +1,11 @@
+*.swp
+*~
+
+## EPICS temporary output
+bin/
+db/
+dbd/
+configure/O.*
+*/src/O.*
+*/Db/O.*
+iocBoot/*/envPaths
